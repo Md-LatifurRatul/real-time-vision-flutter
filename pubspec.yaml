@@ -20,6 +20,7 @@ dependencies:
   camera: 
   provider: 
   permission_handler: 
+  google_mlkit_image_labeling: ^0.14.1
 
 dev_dependencies:
   flutter_test:

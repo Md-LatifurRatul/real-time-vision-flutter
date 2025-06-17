@@ -70,6 +70,10 @@ class CameraProvider extends ChangeNotifier {
 
     try {
       await _cameraController!.initialize();
+      _cameraController!.startImageStream((image) {
+        print("${image.width} ${image.height}");
+      });
+
       print('Camera controller initialized: ${camera.name}');
     } catch (e) {
       _handleError(e);
