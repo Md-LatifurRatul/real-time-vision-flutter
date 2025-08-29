@@ -8,6 +8,7 @@ class RealTimeLiveFootageApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Real time live footage',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
